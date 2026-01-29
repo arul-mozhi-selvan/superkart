@@ -1,7 +1,5 @@
 # for data manipulation
 import pandas as pd
-import sklearn
-import dotenv
 # for creating a folder
 import os
 # for data preprocessing and pipeline creation
@@ -16,7 +14,6 @@ from huggingface_hub import hf_hub_download
 # Define the repository ID and the filename
 REPO_ID = "arulmozhiselvan/tourism-gl-arul" 
 FILENAME = "data/tourism.csv" 
-dotenv.load_dotenv()
 HF_TOKEN = os.getenv("HF_TOKEN")
 api = HfApi(token=HF_TOKEN)
 
