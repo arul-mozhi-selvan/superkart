@@ -68,7 +68,7 @@ y = df[target_col]
 
 Xtrain, Xtest, ytrain, ytest = train_test_split(
     X, y, test_size=0.2, random_state=42, stratify=y
-
+)
 # ---------------------------
 out_dir = "tourism_project/data"
 os.makedirs(out_dir, exist_ok=True)
